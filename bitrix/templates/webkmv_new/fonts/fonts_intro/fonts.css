@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'intro';
+    src: url('introthin.eot') format('embedded-opentype'),
+         url('introthin.woff2') format('woff2'),
+         url('introthin.woff') format('woff'),
+         url('introthin.ttf') format('truetype'),
+         url('introthin.svg#introthin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro';
+    src: url('introblack.eot') format('embedded-opentype'),
+         url('introblack.woff2') format('woff2'),
+         url('introblack.woff') format('woff'),
+         url('introblack.ttf') format('truetype'),
+         url('introblack.svg#introblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro';
+    src: url('introbold.eot') format('embedded-opentype'),
+         url('introbold.woff2') format('woff2'),
+         url('introbold.woff') format('woff'),
+         url('introbold.ttf') format('truetype'),
+         url('introbold.svg#introbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro';
+    src: url('introbookalt.eot') format('embedded-opentype'),
+         url('introbookalt.woff2') format('woff2'),
+         url('introbookalt.woff') format('woff'),
+         url('introbookalt.ttf') format('truetype'),
+         url('introbookalt.svg#introbookalt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'intro';
+    src: url('introbookitalic.eot') format('embedded-opentype'),
+         url('introbookitalic.woff2') format('woff2'),
+         url('introbookitalic.woff') format('woff'),
+         url('introbookitalic.ttf') format('truetype'),
+         url('introbookitalic.svg#introbookitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'intro';
+    src: url('introlight.eot') format('embedded-opentype'),
+         url('introlight.woff2') format('woff2'),
+         url('introlight.woff') format('woff'),
+         url('introlight.ttf') format('truetype'),
+         url('introlight.svg#introlight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}

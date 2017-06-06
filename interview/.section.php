@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Интервью";
+$arDirProperties = Array(
+
+);
+?>

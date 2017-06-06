@@ -1,0 +1,15 @@
+.bx_breadcrumbs{
+    margin:0 0 20px 0;
+    padding:0px;
+    font-size:11px
+}
+
+.bx_breadcrumbs a{
+    color:#aaaaaa;
+    text-decoration:none;
+}
+
+.bx_breadcrumbs span{
+    color:#787777;
+    text-decoration:none;
+}

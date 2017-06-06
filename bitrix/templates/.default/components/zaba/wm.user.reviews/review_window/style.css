@@ -1,0 +1,22 @@
+.mfeedback {}
+
+.mfeedback form textarea{
+	display: block;
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	padding: 10px;
+	font-family: noto_sansregular, Tahoma;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.mfeedback .txt_head_name h2{
+	background-color: #f9f9f9;
+	font-size: 26px;
+}
+
+.mfeedback .txt_head_name:before{
+	top:20px;
+}

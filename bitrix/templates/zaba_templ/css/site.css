@@ -1,0 +1,263 @@
+.main_news_bl_l{
+	width: 300px;
+	font-size: 13px;
+	color: #3d3a3e;
+	float: left;
+	text-align: left;
+}
+
+.main_news_bl_l img{
+	width: 100%;
+	height: auto;
+}
+.main_news_bl_l .time_aft{
+	margin-top: 5px;
+}
+
+/*------------------------------------------------*/
+
+.main_news_bl_r{
+	width: 580px;
+	float: right;
+	background: #feeee0 url("../img/anons_bcgr.gif") bottom right no-repeat;
+	font-size: 13px;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+
+.main_news_bl_r_sub{
+	margin-top: 15px;
+	position: relative;
+}
+
+.main_news_bl_r .main_news_bl_r_sub:first-child{
+	margin-top: 0;
+}
+
+.main_news_bl_r_sub img{
+	width: 186px;
+	border: solid 2px #ffffff;
+	margin: 0 20px 0 0;
+	float: left;
+}
+
+.main_news_bl_r_sub div{
+	color: #6f6e70;
+	font-size: 13px;
+	padding-bottom: 40px;
+}
+
+.main_news_bl_r_sub div h3 a{
+	text-transform: uppercase;
+	color: #ff8a00;
+	font-family: noto_sansbold, tahoma, helvetica;
+	font-size: 18px;
+	display: block;
+	margin-bottom: 3px;
+	clear: none;
+	padding: 0;
+}
+
+.main_news_bl_r_sub div .time_aft{
+	font-family: noto_sansbold, tahoma, helvetica;
+	color: #6f6e70;
+	font-size: 14px;
+	line-height: 27px;
+	background: url("../img/anons_arrow.png") bottom right no-repeat;
+	position: absolute;
+	bottom: 0;
+	width: 360px;
+	padding: 0 0 0 220px;
+
+}
+
+.main_news_bl_r_sub div .time_aft a{
+	font-family: noto_sansbold, tahoma, helvetica;
+	vertical-align: middle;
+	background: url("../img/podrob.png") top center no-repeat;
+	width: 133px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #c56217;
+	display: inline-block;
+	float: right;
+}
+
+.main_news_bl_r_sub div .time_aft a:hover{
+	background-position: bottom center;
+}
+
+/*---------------------------------------------------------*/
+
+.interview_persik{
+	background-color: #feeee0;
+}
+
+.interview_persik .txt_head_name h2{
+	background-color: #feeee0;
+}
+
+.interview_persik .txt_head_name a{
+	background-color: #feeee0;
+}
+
+.interview_persik .txt_head_name:before{
+	border-color: #ff8a00;
+}
+
+.main_img_interview{
+	border: solid 3px #ffffff;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	border-radius: 150px;
+
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+
+	float: left;
+	margin: -30px 20px 0 0;
+}
+
+.main_img_interview img{
+	height: 100%;
+	width: auto;
+	min-width: 100%;
+}
+
+.interview_text{
+	float: left;
+	width: 610px;
+}
+
+/*-----------------------------------------*/
+
+.brends{
+	margin: 0 -10px 25px -10px;
+}
+
+.brends div{
+	width: 218px;
+	height: 218px;
+	overflow: hidden;
+	margin: 10px;
+	float: left;
+
+	border: solid 1px #e0dfdf;
+	-webkit-border-radius: 110px;
+	-moz-border-radius: 110px;
+	border-radius: 110px;
+}
+
+.brends div img{
+	height: 100%;
+	width: auto;
+	min-width: 100%;
+}
+
+/*------------------------------------------*/
+
+
+.spravka{
+	margin: 0 -3px 20px -2px;
+	padding: 0 0 12px 0;
+	border-bottom: #393c3c dotted 1px;
+}
+
+.spravka a{
+	display: block;
+	float: left;
+	width: 90px;
+	height: 35px;
+	margin: 0 3px 0 2px;
+	padding: 80px 5px 0 5px;
+	text-align: center;
+	text-decoration: none;
+	font-family: noto_sansbold, tahoma, helvetica;
+	color: #555c66;
+	font-size: 12px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.spravka a:hover{
+	background-color: #ffecdc;
+}
+
+.ico_s1{
+	background: url("../img/icon_s1.png");
+}
+
+/*--------------------------------------------------------*/
+
+.blue_moon{
+	background-color: #e8f5fa;
+	padding: 15px 0 2px 0;
+}
+
+.blue_moon .txt_head_name h2{
+	color: #868587;
+	background-color: #e8f5fa;
+}
+
+.blue_moon .txt_head_name a{
+	background-color: #e8f5fa;
+}
+
+.blue_moon .txt_head_name:before{
+	border-color: #cbcacd;
+}
+
+/*---------------------------*/
+
+.consuls{
+	margin: 10px -10px 20px -10px;
+}
+
+.consuls_men{
+	width: 175px;
+	height: 90px;
+	position: relative;
+	padding: 25px 0 0 125px;
+	margin: 10px;
+	float: left;
+	color: #262422;
+	font-size: 13px;
+}
+
+.consuls_img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 110px;
+	width: 110px;
+	overflow: hidden;
+
+	-webkit-border-radius: 55px;
+	-moz-border-radius: 55px;
+	border-radius: 55px;
+}
+
+.consuls_img img{
+	height: 100%;
+	width: auto;
+	min-width: 100%;
+}
+
+.consuls_text{
+	margin: 0 0 5px -50px;
+	padding: 5px 0 5px 50px;
+
+	background: url("../img/cons_text_bcgr.gif") #65b9da;
+	color: #ffffff;
+	font-size: 15px;
+}
+#newadvermessage h2 {width: 100%;}
