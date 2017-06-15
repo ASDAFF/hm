@@ -108,7 +108,8 @@ class IblockSection
         ));
         while($row = $res->Fetch())
         {
-            $catXMLIds[$row['XML_ID']] = $row['ID'];
+            $catXMLIds[$row['XML_ID']]['ID'] = $row['ID'];
+            $catXMLIds[$row['XML_ID']]['NAME'] = $row['NAME'];
             $catsInfo[$row['XML_ID']] = $row;
         }
         return array(

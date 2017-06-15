@@ -56,7 +56,7 @@ class IblockElement
      * @param $redirectUri
      * @return bool
      */
-    public function loadProducts($step, $stepSize, $redirectUri, $needUpdate = false)
+    public function loadProducts()
     {
         //search existing products
         $existsProducts = $this->getExistsProducts();
@@ -80,20 +80,8 @@ class IblockElement
         );
         $status = true;
         $dir = $_SERVER['DOCUMENT_ROOT'] . '/upload/parser/images/';
-        $i = 0;
-        $start = ($step - 1) * $stepSize;
-        $end = $start + $stepSize;
         foreach($this->products as $id => $element)
         {
-            if(++$i <= $start)
-                continue;
-
-            if($i === $end)
-            {
-                //header('Location: ' . $redirectUri . '&step=' . ++$step);
-                echo ++$step;
-                exit;
-            }
 
             $arFields['NAME'] = $element['name'];
             $arFields['CODE'] = \CUtil::translit($element['name'], 'ru');
@@ -208,8 +196,6 @@ class IblockElement
             }
         }
         //header('Location: ' . $redirectUri . '&step=' . ++$step);
-        echo ++$step;
-        exit;
         return $status;
     }
 
