@@ -58,7 +58,7 @@ if(is_array($arResult['ITEMS']) && count($arResult['ITEMS'])>0) {
             $showSubscribeBtn = false;
         
         $canBuy = $PRODUCT['CAN_BUY'];
-        
+
 		?><div class="js-element js-elementid<?=$arItem['ID']?> <?if($haveOffers):?>offers<?else:?>simple<?endif;?><?
 			if( isset($arItem['DAYSARTICLE2']) || isset($PRODUCT['DAYSARTICLE2']) ) { echo ' da2'; }
 			if( isset($arItem['QUICKBUY']) || isset($PRODUCT['QUICKBUY']) ) { echo ' qb'; }
@@ -100,12 +100,12 @@ if(is_array($arResult['ITEMS']) && count($arResult['ITEMS'])>0) {
 						} else {
 							?><span class="pic"><?
 						}
-							if( isset($arItem['FIRST_PIC']['RESIZE']['src']) && trim($arItem['FIRST_PIC']['RESIZE']['src'])!='' )
-							{
-								?><img src="<?=$arItem['FIRST_PIC']['RESIZE']['src']?>" alt="<?=$arItem['FIRST_PIC']['ALT']?>" title="<?=$arItem['FIRST_PIC']['TITLE']?>" /><?
-							} else {
-								?><img src="<?=$arResult['NO_PHOTO']['src']?>" title="<?=$arItem['NAME']?>" alt="<?=$arItem['NAME']?>" /><?
-							}
+                        if( isset($arItem['FIRST_PIC']['RESIZE']['src']) && trim($arItem['FIRST_PIC']['RESIZE']['src'])!='' )
+                        {
+                            ?><img src="<?=$arItem['FIRST_PIC']['RESIZE']['src']?>" alt="<?=$arItem['FIRST_PIC']['ALT']?>" title="<?=$arItem['FIRST_PIC']['TITLE']?>" /><?
+                        } else {
+                            ?><img src="<?=$arResult['NO_PHOTO']['src']?>" title="<?=$arItem['NAME']?>" alt="<?=$arItem['NAME']?>" /><?
+                        }
 						if( $arParams['DONT_SHOW_LINKS']!='Y' ) {
 							?></a><?
 						} else {

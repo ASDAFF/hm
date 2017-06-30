@@ -1,10 +1,11 @@
 <?php
 
-use \WM\Parser\GammaParser2;
+use \WM\Parser\Gamma;
 use \WM\Parser\Worker;
 use \WM\Parser\RiolisParser;
 
 @set_time_limit(0);
+ini_set('memory_limit', '2048M');
 ignore_user_abort(true);
 
 define("NO_KEEP_STATISTIC", true);
@@ -12,23 +13,36 @@ define("NOT_CHECK_PERMISSIONS", true);
 define('CHK_EVENT', true);
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/bitrix/modules/main/include/prolog_before.php';
-$file1 = $_SERVER['DOCUMENT_ROOT'] . '/upload/parser/fullcatalog.xml';
-$file2 = $_SERVER['DOCUMENT_ROOT'] . '/upload/parser/riolis.json';
 
-$riolis = new RiolisParser($file2);
-$parser = new GammaParser2();
-$parser->open($file1);
+$gamma = new \WM\Parser\GammaImport($_SERVER['DOCUMENT_ROOT']);
+$gamma->start();
+
+/*
+$file1 = $_SERVER['DOCUMENT_ROOT'] . '/upload/parser/fullcatalog.yml';
+//$file2 = $_SERVER['DOCUMENT_ROOT'] . '/upload/parser/riolis.json';
+
+$parser = new Gamma();
+$res = $parser->open($file1);
 $parser->parse();
 $parser->close();
 
-$iblockID = 39;
+$cats = $parser->categories;
+$products = $parser->items;
 
+debugmessage($cats);
+debugmessage($products);
+
+$iblockID = 39;
 $worker = new Worker($iblockID);
 $worker->getSections();
 $worker->getProducts();
+$worker->checkSections($cats);
+$worker->checkProducts($products);
 
 
+/*
 
+$riolis = new RiolisParser($file2);
 $cats = $riolis->sections;
 $products = $riolis->items;
 
@@ -39,7 +53,7 @@ $cats = $parser->sections;
 $products = $parser->items;
 
 $worker->checkSections($cats);
-$worker->checkProducts($products);
+$worker->checkProducts($products);*/
 
 
 

@@ -14,41 +14,36 @@ class Worker
 	public function __construct($iblockId)
 	{
 		$this->iblockId = $iblockId;
-
 	}
 
 	public function getSections()
 	{
-		$section = new \CIBlockSection();
-		$sections = [];
-		$res = $section->GetList([], ['IBLOCK_ID' => $this->iblockId]);
+		$iblockSection = new \CIBlockSection();
+		$res = $iblockSection->GetList([], ['IBLOCK_ID' => $this->iblockId]);
 
+		$this->sections = [];
 		while ($section = $res->Fetch())
 		{
-			$sections[$section['XML_ID']]['ID'] = $section['ID'];
-			$sections[$section['XML_ID']]['NAME'] = $section['NAME'];
-			$sections[$section['XML_ID']]['XML_ID'] = $section['XML_ID'];
+			$this->sections[$section['XML_ID']] = [
+				'ID' => $section['ID'],
+				'NAME' => $section['NAME'],
+				'XML_ID' => $section['XML_ID'],
+			];
 		}
 
-		$this->sections = $sections;
-
-		return $sections;
+		return $this->sections;
 	}
 
 	public function getProducts()
 	{
-		$el = new \CIBlockElement();
-		$products = [];
-		$res = $el->GetList([], ['IBLOCK_ID' => $this->iblockId]);
+		$iblockElement = new \CIBlockElement();
+		$res = $iblockElement->GetList([], ['IBLOCK_ID' => $this->iblockId]);
 
-		while ($product = $res->Fetch())
-		{
-			$products[$product['XML_ID']] = $product;
-		}
+		$this->items = [];
+		while ($item = $res->Fetch())
+			$this->items[$item['XML_ID']] = $item;
 
-		$this->items = $products;
-
-		return $products;
+		return $this->items;
 	}
 
 	public function checkSections($sections)
