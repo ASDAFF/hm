@@ -2,6 +2,8 @@
 $_SERVER['DOCUMENT_ROOT'] = realpath(dirname(__FILE__).'/../..');
 $DOCUMENT_ROOT = $_SERVER['DOCUMENT_ROOT'];
 
+date_default_timezone_set('Europe/Moscow');
+
 define('NO_KEEP_STATISTIC', true);
 define('NOT_CHECK_PERMISSIONS',true);
 define('BX_NO_ACCELERATOR_RESET', true);
@@ -10,6 +12,7 @@ define('CHK_EVENT', true);
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.php');
 
 @set_time_limit(0);
+@ini_set('memory_limit', '512M');
 @ignore_user_abort(true);
 
 $agent = new \CAgent();
