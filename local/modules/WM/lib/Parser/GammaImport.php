@@ -299,8 +299,9 @@ class GammaImport
 			else
 			{
 				$update = [];
-				if ($section['NAME'] != $fields['NAME'])
-					$update['NAME'] = $fields['NAME'];
+				// Нам нужно переименовывать категории вручную, поэтому отключил проверку названия
+				//if ($section['NAME'] != $fields['NAME'])
+				//	$update['NAME'] = $fields['NAME'];
 
 				if ($update)
 				{
@@ -410,7 +411,7 @@ class GammaImport
 				if ($product['PRICE'] != $prices[$id]['PRICE'] && $prices[$id]['ID'])
 					$updatePrice = $product['PRICE'];
 
-				/*if ($update)
+				if ($update)
 					$iblockElement->Update($id, $update);
 				if ($updateProps)
 				{
@@ -422,7 +423,7 @@ class GammaImport
 					$iblockElement->SetPropertyValuesEx($id, self::IBLOCK_ID, $updateProps);
 				}
 				if ($updatePrice !== false)
-					\CPrice::Update($prices[$id]['ID'], ['PRICE' => $updatePrice]);*/
+					\CPrice::Update($prices[$id]['ID'], ['PRICE' => $updatePrice]);
 
 				if ($update || $updateProps || $updatePrice !== false)
 					$this->counts['ITEMS']['UPDATE']++;
