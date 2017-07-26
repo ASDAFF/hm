@@ -299,8 +299,9 @@ class GammaImport
 			else
 			{
 				$update = [];
-				if ($section['NAME'] != $fields['NAME'])
-					$update['NAME'] = $fields['NAME'];
+				// Нам нужно переименовывать категории вручную, поэтому отключил проверку названия
+				//if ($section['NAME'] != $fields['NAME'])
+				//	$update['NAME'] = $fields['NAME'];
 
 				if ($update)
 				{
