@@ -40,7 +40,7 @@ if(is_array($arResult['ITEMS']) && count($arResult['ITEMS'])>0) {
 		$this->SetViewTarget("showcaseview");
 	}
 	foreach($arResult['ITEMS'] as $key1 => $arItem) {
-        
+
 		$this->AddEditAction($arItem['ID'], $arItem['EDIT_LINK'], CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_EDIT'));
 		$this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayByID($arParams['IBLOCK_ID'], 'ELEMENT_DELETE'), array('CONFIRM' => GetMessage('CT_BCS_ELEMENT_DELETE_CONFIRM')));
         $strMainID = $this->GetEditAreaId($arItem['ID']);
