@@ -233,7 +233,7 @@ if($_REQUEST['ajaxpages']=='Y' && $_REQUEST['ajaxpagesid']=='ajaxpages_main')
 		"PROPS_ATTRIBUTES_COLOR" => array(0=>"COLOR_DIRECTORY",),
 		"PROP_ACCESSORIES" => "-",
 		"PROP_ARTICLE" => "-",
-		"PROP_MORE_PHOTO" => "-",
+		"PROP_MORE_PHOTO" => "MORE_PHOTO",
 		"PROP_SKU_ARTICLE" => "-",
 		"PROP_SKU_MORE_PHOTO" => "MORE_PHOTO",
 		"SECTION_CODE" => "",
