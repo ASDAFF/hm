@@ -357,6 +357,7 @@ if($_REQUEST['ajaxpages']=='Y' && $_REQUEST['ajaxpagesid']=='ajaxpages_main')
 		"USE_MIN_AMOUNT" => "Y",
 		"MIN_AMOUNT" => "10",
 		"MAIN_TITLE" => "Наличие на складах",
+		"PROP_MORE_PHOTO" => "MORE_PHOTO",
 		"PROP_SKU_MORE_PHOTO" => "MORE_PHOTO",
 		"PROP_SKU_ARTICLE" => "-",
 		"PROPS_ATTRIBUTES" => array(
