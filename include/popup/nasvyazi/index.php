@@ -13,7 +13,7 @@ echo '<link href="'.SITE_DIR.'include/popup/nasvyazi/style.css?'.randString(10, 
 		<div class="phone">
 			<div class="column1inner">
 				<i class="icon pngicons mobile_hide"></i>
-				<a href="tel:8 (988) 114 57 27">8 (988) 114 57 27</a>						
+				<a href="tel:89881145727">8 (988) 114 57 27</a>
 			</div>
 		</div>
 

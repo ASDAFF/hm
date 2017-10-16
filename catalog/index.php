@@ -309,7 +309,7 @@ $APPLICATION->SetTitle("Каталог товаров");
 		"USE_ALSO_BUY" => "Y",
 		"ALSO_BUY_ELEMENT_COUNT" => "5",
 		"ALSO_BUY_MIN_BUYES" => "2",
-		"USE_STORE" => "Y",
+		"USE_STORE" => "N",
 		"USE_STORE_PHONE" => "N",
 		"USE_STORE_SCHEDULE" => "N",
 		"USE_MIN_AMOUNT" => "Y",
