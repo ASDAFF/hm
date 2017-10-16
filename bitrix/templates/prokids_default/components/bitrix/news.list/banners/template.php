@@ -15,7 +15,7 @@ if(is_array($arResult['ITEMS']) && count($arResult['ITEMS'])>0)
 						?><div class="item" id="<?=$this->GetEditAreaId($arItem['ID']);?>"><?
 							?><a href="<?=$arItem['PROPERTIES'][$arParams['RSGOPRO_LINK']]['VALUE']?>"<?if($arItem['PROPERTIES'][$arParams['RSGOPRO_BLANK']]['VALUE']!=''):?> target="_blank"<?endif;?>><?
 								?><div class="banner"><?
-									?><img u="image" src="<?=$arItem['DETAIL_PICTURE']['SRC']?>" border="0" alt="<?=$arItem['DETAIL_PICTURE']['ALT']?>" title="<?=$arItem['DETAIL_PICTURE']['TITLE']?>" /><?
+									?><img u="image" src="<?=$arItem['DETAIL_PICTURE']['SRC']?>" alt="<?=$arItem['DETAIL_PICTURE']['ALT']?>" title="<?=$arItem['DETAIL_PICTURE']['TITLE']?>" /><?
 									?><div class="tmsg"><?
 										if(isset($arItem['DISPLAY_PROPERTIES'][$arParams['RSGOPRO_TITLE1']]['VALUE']))
 											?><div class="title1"><?=$arItem['DISPLAY_PROPERTIES'][$arParams['RSGOPRO_TITLE1']]['DISPLAY_VALUE']?></div><?
@@ -32,7 +32,7 @@ if(is_array($arResult['ITEMS']) && count($arResult['ITEMS'])>0)
                         if(isset($_GET['qdf']))
 							?><a href="<?=$arItem['PROPERTIES'][$arParams['RSGOPRO_LINK']]['VALUE']?>"<?if($arItem['PROPERTIES'][$arParams['RSGOPRO_BLANK']]['VALUE']!=''):?> target="_blank"<?endif;?>><?
 								?><div class="banner"><?
-									?><img u="image" src="<?=$arItem['DETAIL_PICTURE']['SRC']?>" border="0" alt="<?=$arItem['DETAIL_PICTURE']['ALT']?>" title="<?=$arItem['DETAIL_PICTURE']['TITLE']?>" /><?
+									?><img u="image" src="<?=$arItem['DETAIL_PICTURE']['SRC']?>" alt="<?=$arItem['DETAIL_PICTURE']['ALT']?>" title="<?=$arItem['DETAIL_PICTURE']['TITLE']?>" /><?
 								?></div><?
 							?></a><?
 						?></div><?
@@ -50,7 +50,7 @@ if(is_array($arResult['ITEMS']) && count($arResult['ITEMS'])>0)
 											?><div class="price new"><?=$arItem['DISPLAY_PROPERTIES'][$arParams['RSGOPRO_PRICE']]['DISPLAY_VALUE']?></div><?
 									?></div><?
 									?><div class="image"><?
-										?><img u="image" src="<?=$arItem['DETAIL_PICTURE']['SRC']?>" border="0" alt="<?=$arItem['DETAIL_PICTURE']['ALT']?>" title="<?=$arItem['DETAIL_PICTURE']['TITLE']?>" /><?
+										?><img u="image" src="<?=$arItem['DETAIL_PICTURE']['SRC']?>" alt="<?=$arItem['DETAIL_PICTURE']['ALT']?>" title="<?=$arItem['DETAIL_PICTURE']['TITLE']?>" /><?
 									?></div><?
 								?></div><?
 							?></a><?
