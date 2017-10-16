@@ -1,1 +1,1 @@
-<a class="fancyajax fancybox.ajax big" href="/include/popup/nasvyazi/" title="Мы всегда на связи">Свяжитесь с нами<i class="icon pngicons"></i></a>
+<a class="fancyajax fancybox.ajax nasvyazi" href="/include/popup/nasvyazi/" title="Мы всегда на связи">Свяжитесь с нами<i class="icon pngicons"></i></a>

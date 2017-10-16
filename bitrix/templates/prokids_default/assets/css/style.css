@@ -2201,12 +2201,15 @@ input:-moz-placeholder {
   float: left; }
 
 .logo.column1 {
-  text-align: left; }
+  text-align: left;
+  margin: -10px 0 0;}
 
 .basket.column1 {
   padding-right: 0px;
-  text-align: right; }
-
+  text-align: right;
+  margin-left: -20px;}
+.favorite.column1{
+  margin: 0 -25px;}
 /* site < then max-width */
 @media screen and (max-width: 1260px) {
   body.adaptive .callback.column1 {
@@ -4739,6 +4742,7 @@ body.adaptive .artables.view_gallery table.products td.free.da2,
 
 .mainsections {
   width: 80%;
+  margin-left: 20%;
   float: right;
   margin-top: 23px; }
   .mainsections ul {
@@ -4800,7 +4804,10 @@ body.adaptive .artables.view_gallery table.products td.free.da2,
 @media screen and (max-width: 1010px) {
   body.adaptive .mainsections {
     width: 100%;
-    float: none; } }
+    float: none;
+    margin: 0;
+  }
+}
 
 @media screen and (max-width: 750px) {
   body.adaptive .mainsections li.section {
@@ -5908,7 +5915,10 @@ body.adaptive .artables.view_gallery table.products td.free.da2,
 
 @media screen and (min-width: 1010px) {
   body.adaptive .catalogmenu li ul.first.show {
-    display: block; } }
+    display: block;
+  }
+
+}
 
 @media screen and (max-width: 1010px) {
   body.adaptive .catalogmenu li:hover > ul.lvl4,
@@ -12973,8 +12983,10 @@ a.fullback:hover .icon {
 
 .header .phone {
   font-family: Opensanslight,Arial,Helvetica,sans-serif;
-  text-align: center; }
-
+  text-align: center;
+  margin-left:60px;}
+.center{
+  margin: 20px 0 -20px;}
 .header .phone .icon {
   line-height: 36px;
   width: 17px;
@@ -13042,6 +13054,10 @@ a.fullback:hover .icon {
 .footer .line1 .contacts {
   margin-top: 25px; }
 
+.footer .line1 .contacts .phone {
+  margin-top: 20px;
+}
+
 .footer .line1 .contacts .phone a {
   color: #000;
   font-size: 24px; }
@@ -13053,10 +13069,10 @@ a.fullback:hover .icon {
 
 .footer .line1 .contacts .feedback {
   display: inline-block;
-  margin-top: 25px; }
+  margin-top: 5px; }
 
 .footer .line1 .contacts .recall .icon {
-  width: 9px;
+  width: 17px;
   height: 16px;
   background-position: 0px 140px; }
 
@@ -13065,12 +13081,12 @@ a.fullback:hover .icon {
   margin-right: 5px; }
 
 .footer .line1 .contacts .recall .icon {
-  width: 9px;
+  width: 17px;
   height: 16px;
   background-position: 0px -140px; }
 
 .footer .line1 .contacts .feedback .icon {
-  width: 15px;
+  width: 17px;
   height: 11px;
   background-position: 0px -156px; }
 
@@ -13333,6 +13349,8 @@ body .add2basketform .buy1click {
 /* /additional styles */
 /* main page */
 .sorter_and_name {
+  width: 100%;
+  float: left;
   margin-top: 30px;
   margin-bottom: 15px; }
   .sorter_and_name .name {
@@ -13682,4 +13700,24 @@ ACTIVE BACKGROUND COLOR*/
     color: #fff !important;
     background-color: #36acd4 !important; } }
 
+.nasvyazi {
+
+}
+
+.nasvyazi .phone {
+  margin-bottom: 20px;
+}
+
+.nasvyazi .phone a {
+  line-height: 36px;
+  font-size: 26px;
+  color: #000;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */
+
+.header .logo a img {position: relative;}
+@media (max-width: 875px){
+	.header .logo a img {top: -4px;}}
+

@@ -8,34 +8,6 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Вендорам", 
-		"/vendors/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Поставщикам", 
-		"/suppliers/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Образцы документов", 
-		"/docs/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Новости", 
-		"/news/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Акции", 
 		"/action/", 
 		Array(), 
@@ -57,17 +29,11 @@ $aMenuLinks = Array(
 		"" 
 	),
 	Array(
-		"Наши магазины", 
-		"/shops/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Контакты", 
 		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 
-	),
+	)
 );
+?>

@@ -16,7 +16,7 @@ $this->setFrameMode(true);
 				?><div class="name"><?=$arStore["TITLE"]?></div><?
 				if(isset($arStore["ADDRESS"]))
 				{
-					?><div class="phone"><?=$arStore["ADDRESS"]?></div><?
+					?></div><?
 				}
 				if(isset($arStore["PHONE"]))
 				{

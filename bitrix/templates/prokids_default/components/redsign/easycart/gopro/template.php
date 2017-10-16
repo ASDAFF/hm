@@ -67,10 +67,10 @@
 	?><div class="rsec rsec_headers"><?
 		?><div class="rsec_in" <?if(IntVal($arParams['MAX_WIDTH'])>1):?>style="max-width:<?=IntVal($arParams['MAX_WIDTH'])?>px;"<?endif;?>><?
 			?><div class="rsec_body"><?
-				if($arParams['USE_ONLINE_CONSUL']=='Y')
+				/*if($arParams['USE_ONLINE_CONSUL']=='Y')
 				{
 					?><a class="rsec_online" href="<?=($arParams['ONLINE_CONSUL_LINK']!=''?$arParams['ONLINE_CONSUL_LINK']:"#")?>"><i class="rsec_iconka"></i><span class="rsec_name"><?=GetMessage('ONLINE_CONSULTANT')?></span></a><?
-				}
+				}*/
 				if( $arParams['USE_VIEWED']=='Y' )
 				{
 					echo $APPLICATION->GetViewContent('rsec_thistab_viewed');

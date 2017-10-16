@@ -7,24 +7,17 @@ echo '<link href="'.SITE_DIR.'include/popup/nasvyazi/style.css?'.randString(10, 
 ?>
 
 <div class="nasvyazi">
-	<div class="block left">
-		<span style="font-weight:bold;font-family:Opensanslight,Arial,Helvetica,sans-serif;">КРУГЛОСУТОЧНЫЙ КОНТАКТ ЦЕНТР</span><br />
-		<a href="tel:88005554433">8 800 555 44 33</a><br />
-		<span style="color:#666666;">(Звонки по России бесплатные)</span><br />
-		<br />
-		<span style="font-weight:bold;font-family:Opensanslight,Arial,Helvetica,sans-serif;">ДЛЯ ЖИТЕЛЕЙ МОСКВЫ</span><br />
-		<a href="tel:84951112211">495 111 22 11</a><br />
-		<br />
-		<span style="font-weight:bold;font-family:Opensanslight,Arial,Helvetica,sans-serif;">ВЫ МОЖЕТЕ НАПИСАТЬ НАМ ПИСЬМО</span><br />
-		<a href="mailto:info@opttorg20.ru">info@opttorg20.ru</a><br />
-		или воспользоваться формой <a href="#">обратной связи</a><br />
-		<br />
-		<span style="line-height:25px;font-weight:bold;font-family:Opensanslight,Arial,Helvetica,sans-serif;">ПРИСОЕДИНЯЙСЯ</span><br />
-		<a href="#facebook"><img src="/include/icon_fb.png" border="0" alt=""></a> &nbsp; 
-		<a href="#vkontakte"><img src="/include/icon_vk.png" border="0" alt=""></a> &nbsp; 
-		<a href="#twitter"><img src="/include/icon_tw.png" border="0" alt=""></a> &nbsp; 
-	</div>
-	<div class="block center"><?
+
+	<div class="center">
+
+		<div class="phone">
+			<div class="column1inner">
+				<i class="icon pngicons mobile_hide"></i>
+				<a href="tel:8 (988) 114 57 27">8 (988) 114 57 27</a>						
+			</div>
+		</div>
+
+		<?
 		$APPLICATION->IncludeComponent(
 			"bitrix:catalog.store.list",
 			"nasvyazi",
@@ -41,17 +34,6 @@ echo '<link href="'.SITE_DIR.'include/popup/nasvyazi/style.css?'.randString(10, 
 			)
 		);
 	?></div>
-	<div class="block right">
-		<span style="font-weight:bold;font-family:Opensanslight,Arial,Helvetica,sans-serif;">ОСТАВИТЬ ОТЗЫВ</span><br />
-		<a href="#">Сказать спасибо</a><br />
-		<a href="#">Поделиться идеей</a><br />
-		<a href="#">Отправить претензию</a><br />
-		<br />
-		<span style="font-weight:bold;font-family:Opensanslight,Arial,Helvetica,sans-serif;">СЛУЖБА КЛИЕНТСКИХ ВПЕЧАТЛЕНИЙ</span><br />
-		<a href="#">Линия качества</a><br />
-		<a href="#">Публичные стандарты</a><br />
-		<a href="#">Оцените качество обслуживания</a><br />
-	</div>
 </div>
 
 <?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php');?>

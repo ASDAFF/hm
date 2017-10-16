@@ -29,6 +29,7 @@ if(is_array($arResult['ITEMS']) && count($arResult['ITEMS'])>0)
 						?></div><?
 					} elseif($arItem['PROPERTIES'][$arParams['RSGOPRO_BANNER_TYPE']]['VALUE_XML_ID']=='banner') {
 						?><div class="item" id="<?=$this->GetEditAreaId($arItem['ID']);?>"><?
+                        if(isset($_GET['qdf']))
 							?><a href="<?=$arItem['PROPERTIES'][$arParams['RSGOPRO_LINK']]['VALUE']?>"<?if($arItem['PROPERTIES'][$arParams['RSGOPRO_BLANK']]['VALUE']!=''):?> target="_blank"<?endif;?>><?
 								?><div class="banner"><?
 									?><img u="image" src="<?=$arItem['DETAIL_PICTURE']['SRC']?>" border="0" alt="<?=$arItem['DETAIL_PICTURE']['ALT']?>" title="<?=$arItem['DETAIL_PICTURE']['TITLE']?>" /><?

@@ -13,12 +13,24 @@ ErrorDocument 404 /404.php
 <IfModule mod_rewrite.c>
 	Options +FollowSymLinks
 	RewriteEngine On
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_URI} !/$
+	RewriteRule ^(.*[^/])$ $1/ [R=301,L]
+
+	RewriteCond %{HTTP_HOST} ^www.hobbymania.club$ [NC]
+	RewriteRule ^(.*)$ http://hobbymania.club/$1 [R=301,L]
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-l
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
 	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
 	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+	RewriteBase /
+	RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+	RewriteRule ^index\.php$ / [R=301,L]
 </IfModule>
 
 <IfModule mod_dir.c>

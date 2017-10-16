@@ -518,6 +518,14 @@ $(document).ready(function(){
 	RSGoPro_FancyOptions2.autoSize = false;
 	RSGoPro_FancyOptions2.autoHeight = true;
 	$('.fancyajax.big').fancybox(RSGoPro_FancyOptions2);
+
+
+	RSGoPro_FancyOptions3 = $.extend({}, RSGoPro_FancyOptions1);;
+	RSGoPro_FancyOptions3.width = '40%';
+	RSGoPro_FancyOptions3.height = '40%';
+	RSGoPro_FancyOptions3.autoSize = false;
+	RSGoPro_FancyOptions3.autoHeight = true;
+	$('.fancyajax.nasvyazi').fancybox(RSGoPro_FancyOptions3);
   
 	RSGoPro_InitMaskPhone();
 

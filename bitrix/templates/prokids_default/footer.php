@@ -32,7 +32,7 @@ if ($isAjax) {
 						</a>
 					</div>
 					<div class="contacts clearfix">
-						<div class="phone1">
+						<?/*<div class="phone1">
 							<a class="fancyajax fancybox.ajax recall" href="<?=SITE_DIR?>include/popup/recall/?AJAX_CALL=Y" title="<?=Loc::getMessage('RSGOPRO.RECALL')?>"><i class="icon pngicons"></i><?=Loc::getMessage('RSGOPRO.RECALL')?></a>
 							<div class="phone">
 								<?$APPLICATION->IncludeFile(
@@ -41,8 +41,9 @@ if ($isAjax) {
 									Array("MODE"=>"html")
 								);?>
 							</div>
-						</div>
+                       </div>*/?>
 						<div class="phone2">
+<a class="fancyajax fancybox.ajax recall" href="<?=SITE_DIR?>include/popup/recall/?AJAX_CALL=Y" title="<?=Loc::getMessage('RSGOPRO.RECALL')?>"><i class="icon pngicons"></i><?=Loc::getMessage('RSGOPRO.RECALL')?></a>
 							<a class="fancyajax fancybox.ajax feedback" href="<?=SITE_DIR?>include/popup/feedback/?AJAX_CALL=Y" title="<?=Loc::getMessage('RSGOPRO.FEEDBACK')?>"><i class="icon pngicons"></i><?=Loc::getMessage('RSGOPRO.FEEDBACK')?></a>
 							<div class="phone">
 								<?$APPLICATION->IncludeFile(
@@ -68,7 +69,7 @@ if ($isAjax) {
 						Array("MODE"=>"html")
 					);?>
 				</div>
-				<div class="block four">
+				<div class="block four"><?/*
 					<div class="sovservice">
 						<?$APPLICATION->IncludeFile(
 							SITE_DIR."include/footer/socservice.php",
@@ -83,6 +84,7 @@ if ($isAjax) {
 							Array("MODE"=>"html")
 						);?>
 					</div>
+					*/?>
 				</div>
 			</div>
 		</div>
@@ -91,11 +93,11 @@ if ($isAjax) {
 			<div class="centering">
 				<div class="centeringin clearfix">
 					<div class="sitecopy">
-						<?$APPLICATION->IncludeFile(
+						<?/*$APPLICATION->IncludeFile(
 							SITE_DIR."include/footer/law.php",
 							Array(),
 							Array("MODE"=>"html")
-						);?>
+);*/?>
 					</div>
 					<div class="developercopy">
 						<?php
@@ -103,7 +105,7 @@ if ($isAjax) {
 						/* #REDSIGN_COPYRIGHT# */
 						/****************************************************************************************/
 						?>
-						Powered by <a href="http://redsign.ru/" target="_blank">ALFA Systems</a>
+						Разработка сайта <a href="http://lema.agency" target="_blank">Lema.agency</a>
 					</div>
 				</div>
 			</div>
@@ -123,8 +125,6 @@ if ($isAjax) {
 		Array(),
 		Array("MODE"=>"html")
 	);?>
-
-	<div style="display:none;">AlfaSystems GoPro GP261D21</div>
 
     <script>$('#svg-icons').setHtmlByUrl({url:SITE_TEMPLATE_PATH + '/assets/img/icons.svg?v280'});</script>
     

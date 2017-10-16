@@ -1,8 +1,8 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
-$APPLICATION->SetTitle("Главная");
-$APPLICATION->SetPageProperty("title", "Главная");
-?><?$APPLICATION->IncludeComponent(
+$APPLICATION->SetTitle("Интернет-магазин HobbyMania");
+$APPLICATION->SetPageProperty("title", "Лучшие товары в интернет-магазине HobbyMania");
+$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"banners",
 	Array(
@@ -51,7 +51,7 @@ $APPLICATION->SetPageProperty("title", "Главная");
 		"RSGOPRO_BLANK" => "-",
 		"RSGOPRO_CHANGE_DELAY" => "8000",
 		"RSGOPRO_CHANGE_SPEED" => "2000",
-		"RSGOPRO_LINK" => "-",
+		"RSGOPRO_LINK" => "LINK",
 		"RSGOPRO_PRICE" => "-",
 		"RSGOPRO_TEXT" => "-",
 		"RSGOPRO_TITLE1" => "-",
@@ -88,26 +88,41 @@ $APPLICATION->SetPageProperty("title", "Главная");
 		"SHOW_COUNT_LVL2" => "11",
 		"TOP_DEPTH" => "2"
 	)
-);?> <?$APPLICATION->IncludeComponent(
-	"bitrix:news.line",
-	"main",
-	Array(
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+);?> <?$APPLICATION->IncludeComponent("bitrix:news.line", "main", array(
+	"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"CACHE_GROUPS" => "N",
 		"CACHE_TIME" => "300",
 		"CACHE_TYPE" => "A",
 		"DETAIL_URL" => "",
-		"FIELD_CODE" => array(0=>"PREVIEW_PICTURE",1=>"IBLOCK_NAME",),
-		"IBLOCKS" => array(0=>"37",1=>"33",),
+		"FIELD_CODE" => array(
+			0 => "PREVIEW_PICTURE",
+			1 => "IBLOCK_NAME",
+		),
+		"IBLOCKS" => array(
+			0 => "37",
+			1 => "33",
+		),
 		"IBLOCK_TYPE" => "presscenter",
 		"NEWS_COUNT" => "4",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC"
+	),
+	false,
+	array(
+	"ACTIVE_COMPONENT" => "N"
 	)
 );?>
-<h3></h3>
+<h1><? $APPLICATION->IncludeComponent(
+        "bitrix:main.include",
+        "",
+        Array(
+            "AREA_FILE_SHOW" => "file",
+            "PATH" => SITE_DIR . "include/h1_main_text.php"
+        )
+    ); ?></h1>
+<!--seo_text1-->
 <div class="sorter_and_name clearfix">
 	<h3 class="name">Лучшие товары</h3>
 	<div class="sorter">
@@ -134,6 +149,9 @@ $APPLICATION->IncludeComponent('redsign:catalog.sorter', 'gopro', array(
 ?>
 	</div>
 </div>
+
+<? // START GOPRO ?>
+
 <div id="ajaxpages_main" class="ajaxpages_main">
 	 <?
 global $APPLICATION,$JSON;
@@ -149,7 +167,9 @@ if($_REQUEST['ajaxpages']=='Y' && $_REQUEST['ajaxpagesid']=='ajaxpages_main')
 	$IS_AJAXPAGES = 'Y';
 	$JSON['TYPE'] = 'OK';
 }
-?> <?$APPLICATION->IncludeComponent(
+?>
+
+<?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section",
 	"gopro",
 	Array(
@@ -268,6 +288,9 @@ if($_REQUEST['ajaxpages']=='Y' && $_REQUEST['ajaxpagesid']=='ajaxpages_main')
 	)
 );?>
 </div>
+
+<? // END GOPRO ?>
+
 <?
 if($IS_AJAXPAGES=='Y' || $IS_SORTERCHANGE=='Y')
 {

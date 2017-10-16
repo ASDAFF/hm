@@ -22,19 +22,19 @@ if ($_REQUEST[$action_name] == $arParams['ACTION_CHANGE_TEMPLATE']) { //_______ 
     
 	$val = htmlspecialchars($_REQUEST[$action_name_value]);
 	$_SESSION[$com_uniq_]['ALFASORTER_CTEMPLATE'] = $val;
-	LocalRedirect( $backUrl );
+	LocalRedirect( $backUrl, false, '301 Moved Permanently' );
     
 } elseif ($_REQUEST[$action_name] == $arParams['ACTION_CHANGE_SORT']) { //_______ change sort type
     
 	$val = htmlspecialchars($_REQUEST[$action_name_value]);
 	$_SESSION[$com_uniq_]['ALFASORTER_CSORT'] = $val;
-	LocalRedirect( $backUrl );
+	LocalRedirect( $backUrl, false, '301 Moved Permanently' );
     
 } elseif ($_REQUEST[$action_name] == $arParams['ACTION_CHANGE_OUTPUT']) { //_______ change elements on page
     
 	$val = htmlspecialchars($_REQUEST[$action_name_value]);
 	$_SESSION[$com_uniq_]['ALFASORTER_COUTPUT'] = $val;
-	LocalRedirect( $backUrl );
+	LocalRedirect( $backUrl, false, '301 Moved Permanently' );
     
 }
 

@@ -55,7 +55,7 @@ $phoneMask = COption::GetOptionString($moduleId, 'phone_mask', '+7 (999) 999-999
 $asset = Asset::getInstance();
 
 // add strings
-$asset->addString('<link href="'.SITE_DIR.'favicon.ico" rel="shortcut icon"  type="image/x-icon">');
+$asset->addString('<link href="'.SITE_DIR.'favicon.png" rel="shortcut icon"  type="image/x-icon">');
 $asset->addString('<meta http-equiv="X-UA-Compatible" content="IE=edge" />');
 $asset->addString('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
 $asset->addString('<script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>');
@@ -96,7 +96,7 @@ $asset->addCss(SITE_TEMPLATE_PATH.'/custom/style.css');
 $asset->addJs(SITE_TEMPLATE_PATH.'/custom/script.js');
 
 ?><!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<title><?php $APPLICATION->ShowTitle(); ?></title>
 	<script type="text/javascript">
@@ -117,6 +117,9 @@ $asset->addJs(SITE_TEMPLATE_PATH.'/custom/script.js');
 		RSGoPro_PHONETABLET = "N",
         RSGoPro_PhoneMask = '<?=$phoneMask?>';
 	</script>
+	<meta name="yandex-verification" content="f551f3b3feee86a7" />
+	<meta name='wmail-verification' content='c22179853474a9fed67fcd233e80892d' />
+
     <?php $APPLICATION->ShowHead(); ?>
     <script type="text/javascript">
     BX.message({
@@ -131,8 +134,19 @@ $asset->addJs(SITE_TEMPLATE_PATH.'/custom/script.js');
         Array(),
         Array("MODE"=>"html")
     );?>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJ3M2RB');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body class="prop_option_<?=$skuView?><?php if ($adaptive == 'Y'): ?> adaptive<?php endif; ?><?php if ($circular == 'Y'): ?> circular<?php endif; ?>">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ3M2RB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <?$APPLICATION->IncludeFile(
         SITE_DIR."include/header/body_start.php",
@@ -171,16 +185,24 @@ $asset->addJs(SITE_TEMPLATE_PATH.'/custom/script.js');
 		</div>
 		<div id="header" class="header">
 			<div class="centering" style="min-height: 135px;">
-				<div class="centeringin clearfix">
+				<div class="centeringin clearfix center">
 					<div class="logo column1">
 						<div class="column1inner">
-							<a href="<?=SITE_DIR?>">
-								<?$APPLICATION->IncludeFile(
-									SITE_DIR."include/company_logo.php",
-									Array(),
-									Array("MODE"=>"html")
-								);?>
-							</a>
+                            <?if($APPLICATION->GetCurDir() == SITE_DIR):?>
+                                <?$APPLICATION->IncludeFile(
+                                    SITE_DIR."include/company_logo.php",
+                                    Array(),
+                                    Array("MODE"=>"html")
+                                );?>
+                            <?else:?>
+                                <a href="<?=SITE_DIR?>">
+                                    <?$APPLICATION->IncludeFile(
+                                        SITE_DIR."include/company_logo.php",
+                                        Array(),
+                                        Array("MODE"=>"html")
+                                    );?>
+                                </a>
+                            <?endif;?>
 						</div>
 					</div>
 					<div class="phone column1 nowrap">
