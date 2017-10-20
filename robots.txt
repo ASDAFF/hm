@@ -2,14 +2,14 @@ User-Agent: *
 Sitemap: http://hobbymania.club/sitemap.xml
 Disallow: /*?link=*
 Disallow: /*filter/
-Clean-param: alfaction&alfavaluePAGEN /
+Clean-param: alfaction&alfavalue&PAGEN /
 
 User-Agent: Yandex
 Crawl-delay: 0.5
 Sitemap: http://hobbymania.club/sitemap.xml
 Disallow: /*?link=*
 Disallow: /*filter/
-Clean-param: alfaction&alfavaluePAGEN /
+Clean-param: alfaction&alfavalue&PAGEN /
 Host: hobbymania.club
 
 User-Agent: GoogleBot
