@@ -18,7 +18,7 @@
 		"ALFA_SORT_BY_NAME" => array(
 			0 => "sort",
 			1 => "name",
-			2 => "PROPERTY_PROD_PRICE_FALSE",
+			2 => "CATALOG_PRICE_1",
 			3 => "",
 		),
 		"ALFA_SORT_BY_DEFAULT" => "name_asc",
