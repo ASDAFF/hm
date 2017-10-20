@@ -13,7 +13,7 @@
 			?><div class="rsec_body"><?
 				?><div class="rsec_tyanya"><?
 					?><i class="rsec_iconka"></i><?
-					?><a class="rsec_close" href="#close"><?=GetMessage('CLOSE_EASYCART')?><i class="rsec_iconka"></a><?
+					?><a class="rsec_close" href="#close"><?=GetMessage('CLOSE_EASYCART')?><i class="rsec_iconka"></i></a><?
 				?></i></div><?
 				?><div class="rsec_tabs"><?
 					if( $arParams['USE_VIEWED']=='Y' )
