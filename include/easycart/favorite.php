@@ -18,7 +18,7 @@ global $rsecFavoriteFilterGo;
 	"rs_easycart", 
 	array(
 		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => "#IBLOCK_ID_catalog#",
+		"IBLOCK_ID" => "39",
 		"ELEMENT_SORT_FIELD" => "sort",
 		"ELEMENT_SORT_ORDER" => "asc",
 		"PROPERTY_CODE" => array(

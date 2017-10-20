@@ -29,8 +29,8 @@ global $rsecViewedFilterGo;
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
 		"USE_PRODUCT_QUANTITY" => "N",
-		"SHOW_PRODUCTS_#IBLOCK_ID_catalog#" => "Y",
-		"IBLOCK_ID" => "#IBLOCK_ID_catalog#",
+		"SHOW_PRODUCTS_39" => "Y",
+		"IBLOCK_ID" => "39",
 		"SECTION_ID" => "",
 		"SECTION_CODE" => "",
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
@@ -42,16 +42,16 @@ global $rsecViewedFilterGo;
 		"SECTION_ELEMENT_CODE" => "",
 		"DEPTH" => "2",
 		"COMPONENT_TEMPLATE" => "rs_easycart",
-		"PROPERTY_CODE_#IBLOCK_ID_catalog#" => array(
+		"PROPERTY_CODE_39" => array(
 			0 => "",
 			1 => "",
 		),
-		"CART_PROPERTIES_#IBLOCK_ID_catalog#" => array(
+		"CART_PROPERTIES_39" => array(
 			0 => "",
 			1 => "",
 		),
-		"ADDITIONAL_PICT_PROP_#IBLOCK_ID_catalog#" => "DOCS",
-		"LABEL_PROP_#IBLOCK_ID_catalog#" => "-",
+		"ADDITIONAL_PICT_PROP_39" => "DOCS",
+		"LABEL_PROP_39" => "-",
 		"PROPERTY_CODE_#IBLOCK_ID_offers#" => array(
 			0 => "",
 			1 => "",
@@ -72,7 +72,7 @@ global $rsecViewedFilterGo;
 	"rs_easycart", 
 	array(
 		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => "#IBLOCK_ID_catalog#",
+		"IBLOCK_ID" => "39",
 		"ELEMENT_SORT_FIELD" => "sort",
 		"ELEMENT_SORT_ORDER" => "asc",
 		"PROPERTY_CODE" => array(
