@@ -14,7 +14,7 @@
 				?><div class="rsec_tyanya"><?
 					?><i class="rsec_iconka"></i><?
 					?><a class="rsec_close" href="#close"><?=GetMessage('CLOSE_EASYCART')?><i class="rsec_iconka"></i></a><?
-				?></i></div><?
+				?></div><?
 				?><div class="rsec_tabs"><?
 					if( $arParams['USE_VIEWED']=='Y' )
 					{
