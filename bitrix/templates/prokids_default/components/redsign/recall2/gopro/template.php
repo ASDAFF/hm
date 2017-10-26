@@ -19,10 +19,11 @@ if($arResult['GOOD_SEND']=='Y') {
 		foreach($arResult['FIELDS'] as $arField) {
 			if($arField['SHOW']=='Y') {
 				?><div class="line clearfix"><?
+					$req = (in_array($arField['CONTROL_NAME'], $arParams['REQUIRED_FIELDS'])) ? ' required' : '';
 					if($arField['CONTROL_NAME']!='RS_AUTHOR_COMMENT') {
-						?><input<?if($arField['CONTROL_NAME']=='RS_AUTHOR_PHONE'):?> class="maskPhone"<?endif;?> type="text" name="<?=$arField['CONTROL_NAME']?>" value="<?=$arField['HTML_VALUE']?>" placeholder="<?=GetMessage('MSG_'.$arField['CONTROL_NAME'])?><?if(in_array($arField['CONTROL_NAME'], $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:" /><?
+						?><input<?if($arField['CONTROL_NAME']=='RS_AUTHOR_PHONE'):?> class="maskPhone"<?endif;?> type="text" name="<?=$arField['CONTROL_NAME']?>" value="<?=$arField['HTML_VALUE']?>" placeholder="<?=GetMessage('MSG_'.$arField['CONTROL_NAME'])?><?if(in_array($arField['CONTROL_NAME'], $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:"<?= $req ?> /><?
 					} else {
-						?><textarea name="<?=$arField['CONTROL_NAME']?>" placeholder="<?=GetMessage('MSG_'.$arField['CONTROL_NAME'])?><?if(in_array($arField['CONTROL_NAME'], $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:"><?=$arField['HTML_VALUE']?></textarea><?
+						?><textarea name="<?=$arField['CONTROL_NAME']?>" placeholder="<?=GetMessage('MSG_'.$arField['CONTROL_NAME'])?><?if(in_array($arField['CONTROL_NAME'], $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:"<?= $req ?>><?=$arField['HTML_VALUE']?></textarea><?
 					}
 				?></div><?
 			}

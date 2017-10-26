@@ -17,17 +17,20 @@ if(strlen($arResult['OK_MESSAGE'])>0)
 		
 		?><?=bitrix_sessid_post()?><?
 		?><input type="hidden" name="PARAMS_HASH" value="<?=$arResult['PARAMS_HASH']?>"><?
-		
+
+		$req = (empty($arParams['REQUIRED_FIELDS']) || in_array('NAME', $arParams['REQUIRED_FIELDS'])) ? ' required' : '';
 		?><div class="line clearfix"><?
-			?><input type="text" name="user_name" value="<?=$arResult['AUTHOR_NAME']?>" placeholder="<?=GetMessage('MFT_NAME')?><?if(empty($arParams['REQUIRED_FIELDS']) || in_array('NAME', $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:" /><?
+			?><input type="text" name="user_name" value="<?=$arResult['AUTHOR_NAME']?>" placeholder="<?=GetMessage('MFT_NAME')?><?if(empty($arParams['REQUIRED_FIELDS']) || in_array('NAME', $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:"<?= $req ?> /><?
 		?></div><?
-		
+
+		$req = (empty($arParams['REQUIRED_FIELDS']) || in_array('EMAIL', $arParams['REQUIRED_FIELDS'])) ? ' required' : '';
 		?><div class="line clearfix"><?
-			?><input type="text" name="user_email" value="<?=$arResult['AUTHOR_EMAIL']?>" placeholder="<?=GetMessage('MFT_EMAIL')?><?if(empty($arParams['REQUIRED_FIELDS']) || in_array('EMAIL', $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:" /><?
+			?><input type="text" name="user_email" value="<?=$arResult['AUTHOR_EMAIL']?>" placeholder="<?=GetMessage('MFT_EMAIL')?><?if(empty($arParams['REQUIRED_FIELDS']) || in_array('EMAIL', $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:"<?= $req ?> /><?
 		?></div><?
-		
+
+		$req = (empty($arParams['REQUIRED_FIELDS']) || in_array('MESSAGE', $arParams['REQUIRED_FIELDS'])) ? ' required' : '';
 		?><div class="line clearfix"><?
-			?><textarea name="MESSAGE" placeholder="<?=GetMessage('MFT_MESSAGE')?><?if(empty($arParams['REQUIRED_FIELDS']) || in_array('MESSAGE', $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:"><?=$arResult['MESSAGE']?></textarea><?
+			?><textarea name="MESSAGE" placeholder="<?=GetMessage('MFT_MESSAGE')?><?if(empty($arParams['REQUIRED_FIELDS']) || in_array('MESSAGE', $arParams['REQUIRED_FIELDS'])):?>*<?endif;?>:"<?= $req ?>><?=$arResult['MESSAGE']?></textarea><?
 		?></div><?
 		
 		// CAPTCHA
